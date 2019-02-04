@@ -1,7 +1,7 @@
 {
   "name": "airr-react-example",
   "version": "1.0.0",
-  "description": "Simple example of airr-react library usage.",
+  "description": "Simple examples of airr-react library usage.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
