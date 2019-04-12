@@ -6,9 +6,9 @@
   "main": "src/index.js",
   "dependencies": {
     "airr-react": "3.1.1",
-    "react": "16.4.2",
-    "react-dom": "16.4.2",
-    "react-scripts": "1.1.4"
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
+    "react-scripts": "2.0.3"
   },
   "devDependencies": {},
   "scripts": {
