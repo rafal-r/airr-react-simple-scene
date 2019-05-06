@@ -5,7 +5,7 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "airr-react": "3.1.1",
+    "airr-react": "^4.0.1",
     "react": "16.8.0",
     "react-dom": "16.8.0",
     "react-scripts": "2.0.3"

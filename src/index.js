@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { SceneWrapper, ViewWrapper, Sidepanel } from "airr-react";
+import { Scene, View, Sidepanel } from "airr-react";
 import "airr-react/dist/airr-react.css";
 import "./styles.css";
 
 const BlueViewName = "blue-view";
 const RedViewName = "red-view";
 
-class BlueView extends ViewWrapper {
+class BlueView extends View {
   content() {
     return (
       <div className={BlueViewName}>
@@ -24,7 +24,7 @@ class BlueView extends ViewWrapper {
     );
   }
 }
-class RedView extends ViewWrapper {
+class RedView extends View {
   content() {
     return (
       <div className={RedViewName}>
@@ -36,7 +36,7 @@ class RedView extends ViewWrapper {
   }
 }
 
-class Viewport extends SceneWrapper {
+class Viewport extends Scene {
   viewsConfig = {
     [BlueViewName]: {
       type: BlueView,
