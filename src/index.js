@@ -77,6 +77,7 @@ class Viewport extends Scene {
       sidepanel: {
         type: Sidepanel,
         props: {
+          enabled: true,
           children: "Hello! I'm sidepanel!"
         }
       },
