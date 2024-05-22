@@ -1,3 +1,4 @@
+import "babel-polyfill";
 import React from "react";
 import ReactDOM from "react-dom";
 import { Scene, View, Sidepanel } from "airr-react";
@@ -11,7 +12,8 @@ class BlueView extends View {
   content() {
     return (
       <div className={BlueViewName}>
-        BlueView<br />
+        BlueView
+        <br />
         <br />
         <button onClick={this.props.goToRedView}>go to red</button>
         <br />
@@ -28,7 +30,8 @@ class RedView extends View {
   content() {
     return (
       <div className={RedViewName}>
-        RedView<br />
+        RedView
+        <br />
         <br />
         <button onClick={this.props.goToBlueView}>go to blue</button>
       </div>
@@ -49,23 +52,24 @@ class Viewport extends Scene {
             name: "foo-mayer",
             content: (
               <div>
-                Hello! I'm modal layer!<br />
+                Hello! I'm modal layer!
+                <br />
                 <br />
                 <button onClick={() => this.closeMayer("foo-mayer")}>
                   close me
                 </button>
               </div>
-            )
-          })
-      }
+            ),
+          }),
+      },
     },
     [RedViewName]: {
       type: RedView,
       props: {
         name: RedViewName,
-        goToBlueView: () => this.changeView(BlueViewName)
-      }
-    }
+        goToBlueView: () => this.changeView(BlueViewName),
+      },
+    },
   };
 
   constructor(props) {
@@ -78,13 +82,13 @@ class Viewport extends Scene {
         type: Sidepanel,
         props: {
           enabled: true,
-          children: "Hello! I'm sidepanel!"
-        }
+          children: "Hello! I'm sidepanel!",
+        },
       },
       views: [
         this.getFreshViewConfig(BlueViewName),
-        this.getFreshViewConfig(RedViewName)
-      ]
+        this.getFreshViewConfig(RedViewName),
+      ],
     };
   }
 }

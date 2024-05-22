@@ -6,11 +6,11 @@
   "main": "src/index.js",
   "dependencies": {
     "airr-react": "^6.0.0",
-    "react": "16.8.0",
-    "react-dom": "16.8.0",
-    "react-scripts": "2.0.3"
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-scripts": "^5.0.1"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -22,5 +22,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
 }
